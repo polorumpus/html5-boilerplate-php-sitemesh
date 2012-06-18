@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+  <decorators directory="/html5-boilerplate-php-sitemesh/decorators">
+    <decorator name="commonheader" page="commonheader.php"/> 
+ </decorators>
+  <mappers>          
+    <chain maps="decorators">
+      <mapper type="SiteMeshRequestParamMapper">
+	    <param name="param" value="decorator"/>
+      </mapper>
+      <mapper type="SiteMeshPathMapper">
+	    <param name="index.html" value="commonheader"/>
+	    <param name="iphone.html" value="commonheader"/>
+	    <param name="samsung.html" value="commonheader"/>
+	    <param name="repair.html" value="commonheader"/>
+	    <param name="blackberry.html" value="commonheader"/>
+	    <param name="404.html" value="commonheader"/>
+      </mapper>
+    </chain>
+  </mappers>
+</sitemesh>
